@@ -13,7 +13,7 @@ final class WeatherViewModel: ObservableObject {
     
     //MARK: Atributtes
     private var urlBase = "https://api.openweathermap.org/"
-    private var cityName = "metepec"
+    private var cityName = "lerma"
     private var apiKey = "89e877851660b7c2a4c2d4111688139a"
     private var units = "metric"
     private var lenguage = "es"

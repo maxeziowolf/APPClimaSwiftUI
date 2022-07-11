@@ -19,7 +19,6 @@
 		CC6891E3286CE6A1003262D1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E2286CE6A1003262D1 /* WeatherModel.swift */; };
 		CC6891E5286CE862003262D1 /* WeatherModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E4286CE862003262D1 /* WeatherModelMapper.swift */; };
 		CC6891E7286CEF24003262D1 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E6286CEF24003262D1 /* Sys.swift */; };
-		CC6891EA286D1706003262D1 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E9286D1706003262D1 /* LocationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +35,6 @@
 		CC6891E2286CE6A1003262D1 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		CC6891E4286CE862003262D1 /* WeatherModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelMapper.swift; sourceTree = "<group>"; };
 		CC6891E6286CEF24003262D1 /* Sys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
-		CC6891E9286D1706003262D1 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +102,6 @@
 		CC0E53DD286BAD4A00388FCE /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				CC6891E9286D1706003262D1 /* LocationViewModel.swift */,
 				CC0E53E8286BBF3600388FCE /* WeatherViewModel.swift */,
 			);
 			path = ViewModel;
@@ -207,7 +204,6 @@
 				CC0E53E5286BB82E00388FCE /* Main.swift in Sources */,
 				CC0E53E3286BB75700388FCE /* Weather.swift in Sources */,
 				CC6891E5286CE862003262D1 /* WeatherModelMapper.swift in Sources */,
-				CC6891EA286D1706003262D1 /* LocationViewModel.swift in Sources */,
 				CC0E53D1286BACA800388FCE /* ContentView.swift in Sources */,
 				CC0E53E9286BBF3600388FCE /* WeatherViewModel.swift in Sources */,
 				CC6891E7286CEF24003262D1 /* Sys.swift in Sources */,

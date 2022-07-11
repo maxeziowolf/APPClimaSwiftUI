@@ -12,13 +12,10 @@ struct ContentView: View {
     
     @StateObject var weatherViewModel = WeatherViewModel()
     
-    @StateObject var locationViewModel = LocationViewModel()
     
     
     
     var body: some View {
-        
-        
         
         ZStack{
             
@@ -107,15 +104,9 @@ struct ContentView: View {
         .background(
             LinearGradient(colors: [.blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
         )
-        .task (id: locationViewModel.location){
+        .task (){
 
             await weatherViewModel.getWeather()
-            
-        }
-        .onReceive(locationViewModel.$location) { location in
-            
-            weatherViewModel.setupLocation(location: location)
-            
             
         }
         

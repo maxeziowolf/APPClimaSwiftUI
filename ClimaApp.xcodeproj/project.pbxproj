@@ -16,6 +16,10 @@
 		CC0E53E5286BB82E00388FCE /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0E53E4286BB82E00388FCE /* Main.swift */; };
 		CC0E53E7286BBB4700388FCE /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0E53E6286BBB4700388FCE /* Wind.swift */; };
 		CC0E53E9286BBF3600388FCE /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0E53E8286BBF3600388FCE /* WeatherViewModel.swift */; };
+		CC3F9118287CA0CC00805F3B /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F9117287CA0CC00805F3B /* CustomNavigationBar.swift */; };
+		CC3F911A287CA3CC00805F3B /* Color Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F9119287CA3CC00805F3B /* Color Extension.swift */; };
+		CC3F911E287CA62E00805F3B /* CustonNavigationBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F911D287CA62E00805F3B /* CustonNavigationBarContainer.swift */; };
+		CC3F9121287CC62700805F3B /* CardWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F9120287CC62700805F3B /* CardWeather.swift */; };
 		CC6891E3286CE6A1003262D1 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E2286CE6A1003262D1 /* WeatherModel.swift */; };
 		CC6891E5286CE862003262D1 /* WeatherModelMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E4286CE862003262D1 /* WeatherModelMapper.swift */; };
 		CC6891E7286CEF24003262D1 /* Sys.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6891E6286CEF24003262D1 /* Sys.swift */; };
@@ -32,6 +36,10 @@
 		CC0E53E4286BB82E00388FCE /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		CC0E53E6286BBB4700388FCE /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		CC0E53E8286BBF3600388FCE /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		CC3F9117287CA0CC00805F3B /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		CC3F9119287CA3CC00805F3B /* Color Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color Extension.swift"; sourceTree = "<group>"; };
+		CC3F911D287CA62E00805F3B /* CustonNavigationBarContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustonNavigationBarContainer.swift; sourceTree = "<group>"; };
+		CC3F9120287CC62700805F3B /* CardWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardWeather.swift; sourceTree = "<group>"; };
 		CC6891E2286CE6A1003262D1 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		CC6891E4286CE862003262D1 /* WeatherModelMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelMapper.swift; sourceTree = "<group>"; };
 		CC6891E6286CEF24003262D1 /* Sys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sys.swift; sourceTree = "<group>"; };
@@ -110,6 +118,7 @@
 		CC0E53DE286BAD5400388FCE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CC3F9114287CA03000805F3B /* Components */,
 				CC0E53D0286BACA800388FCE /* ContentView.swift */,
 			);
 			path = View;
@@ -118,8 +127,27 @@
 		CC0E53DF286BAD5D00388FCE /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CC3F9119287CA3CC00805F3B /* Color Extension.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		CC3F9114287CA03000805F3B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CC3F911F287CC5E000805F3B /* Navigation */,
+				CC3F9120287CC62700805F3B /* CardWeather.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		CC3F911F287CC5E000805F3B /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CC3F9117287CA0CC00805F3B /* CustomNavigationBar.swift */,
+				CC3F911D287CA62E00805F3B /* CustonNavigationBarContainer.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		CC6891E8286D158A003262D1 /* APP */ = {
@@ -201,13 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC3F9118287CA0CC00805F3B /* CustomNavigationBar.swift in Sources */,
+				CC3F911E287CA62E00805F3B /* CustonNavigationBarContainer.swift in Sources */,
 				CC0E53E5286BB82E00388FCE /* Main.swift in Sources */,
 				CC0E53E3286BB75700388FCE /* Weather.swift in Sources */,
+				CC3F9121287CC62700805F3B /* CardWeather.swift in Sources */,
 				CC6891E5286CE862003262D1 /* WeatherModelMapper.swift in Sources */,
 				CC0E53D1286BACA800388FCE /* ContentView.swift in Sources */,
 				CC0E53E9286BBF3600388FCE /* WeatherViewModel.swift in Sources */,
 				CC6891E7286CEF24003262D1 /* Sys.swift in Sources */,
 				CC0E53CF286BACA800388FCE /* ClimaAppApp.swift in Sources */,
+				CC3F911A287CA3CC00805F3B /* Color Extension.swift in Sources */,
 				CC0E53E1286BB5B400388FCE /* WeatherResponseDataModel.swift in Sources */,
 				CC6891E3286CE6A1003262D1 /* WeatherModel.swift in Sources */,
 				CC0E53E7286BBB4700388FCE /* Wind.swift in Sources */,

@@ -11,7 +11,9 @@ import SwiftUI
 struct ClimaAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CustonNavigationBarContainer {
+                ContentView()
+            }
         }
     }
 }

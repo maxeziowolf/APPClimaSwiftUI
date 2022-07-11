@@ -15,14 +15,13 @@ struct WeatherModelWapper {
             return .empty
         }
         
-        let temperature = dataModel.main ?? Main(temp: 0, feelsLike: 0, tempMin: 0, tempMax: 0, pressure: 0, humidity: 0
-        )
+        let temperature = dataModel.main 
         
-        let sunsetWithTimezone = dataModel.sun.sunset.addingTimeInterval(dataModel.timezone ?? 0 - Double(TimeZone.current.secondsFromGMT()))
-        let sunriseWithTimezone = dataModel.sun.sunrise.addingTimeInterval(dataModel.timezone ?? 0 - Double(TimeZone.current.secondsFromGMT()))
+        let sunsetWithTimezone = dataModel.sun!.sunset?.addingTimeInterval(dataModel.timezone  - Double(TimeZone.current.secondsFromGMT()))
+        let sunriseWithTimezone = dataModel.sun!.sunrise?.addingTimeInterval(dataModel.timezone  - Double(TimeZone.current.secondsFromGMT()))
         
         return WeatherModel(
-                            city: dataModel.cityName ?? "No ciudad",
+                            city: dataModel.cityName ,
                             wather: weather.main,
                             description: ("(\(weather.description.capitalized))"),
                             iconURL: URL(string: "https://api.openweathermap.org/img/w/\(weather.icon).png"),
@@ -30,7 +29,7 @@ struct WeatherModelWapper {
                             minTemperature: "\(Int(temperature.tempMin))° min.",
                             maxTemperature: "\(Int(temperature.tempMax))° max.",
                             humidity: "\(temperature.humidity) %",
-                            sunRise: sunriseWithTimezone ?? .now, 
+                            sunRise: sunriseWithTimezone ?? .now ,
                             sunSet: sunsetWithTimezone ?? .now
                             
         )

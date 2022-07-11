@@ -30,12 +30,11 @@ struct WeatherResponseDataModel: Codable{
     let cityName: String
     let weather: [Weather]
     let main: Main
-    let wind: Wind
-    let sun: Sys
+    let sun: Sys?
     let timezone: Double
     
     enum CodingKeys: String, CodingKey {
-        case cityName = "name", weather, main, wind, sun = "sys", timezone
+        case cityName = "name", weather, main,  sun = "sys", timezone
     }
     
 }

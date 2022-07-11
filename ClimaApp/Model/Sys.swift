@@ -15,9 +15,9 @@ import Foundation
 
 struct Sys: Codable {
     
-    let type: Int
-    let sunrise: Date
-    let sunset: Date
+    let type: Int?
+    let sunrise: Date?
+    let sunset: Date?
     
     
 }

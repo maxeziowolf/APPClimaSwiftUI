@@ -27,7 +27,10 @@ struct CustomNavigationBar: View {
         .padding()
         .font(.headline)
         .foregroundColor(.white)
-        .background(Color.cyan)
+        .background(
+            Color.black.opacity(0.3)
+        )
+        .preferredColorScheme(.dark)
         
     }
 }

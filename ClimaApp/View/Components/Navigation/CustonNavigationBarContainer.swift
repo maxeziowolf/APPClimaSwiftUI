@@ -26,6 +26,12 @@ struct CustonNavigationBarContainer<Content: View> : View {
             
             
         }
+        .background(
+            Image("background")
+                .resizable()
+                .ignoresSafeArea(edges: .all)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+        )
         
     }
 }

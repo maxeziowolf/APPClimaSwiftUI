@@ -17,9 +17,13 @@ struct CardWeather: View {
         
         ZStack {
             
-            Image("sky.without.clouds")
-                .resizable()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+//            Image("sky.without.clouds")
+//                .resizable()
+//                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            
+            Rectangle()
+                .foregroundColor(.blue.opacity(0.5))
+                
             
             VStack{
                 
@@ -104,9 +108,9 @@ struct CardWeather: View {
             
         }
         .frame(maxWidth: .infinity, maxHeight: 300)
-        .cornerRadius(20)
+        .cornerRadius(25)
         .padding()
-        .shadow(color: .red, radius: 2, x: 0, y: 0)
+        .shadow(color: .black, radius:  4, x: 0, y: 0)
     }
 }
 
